@@ -8,44 +8,35 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
 </head>
     <body> 
-        <div class="master">
-            <div>
-                <h1 id="titulo">Cadastro</h1>
-                <p id="subtitulo">Insira seus dados abaixo</p>
-                <br>
-            </div>
+        
+        
+    <form>
+        <h3>Login</h3>
+        <input type="text" placeholder="login" id="login">
+        <input type="password" placeholder="senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+    </form> 
+    
 
-                <form>
-                    <fieldset class="grupo">           
-                        <div class="campo">
-                            <label for="nome"><strong>Nome</strong></label>
-                            <input type="text" name="nome" id="nome" required>
-                        </div> 
+        <script>
 
-                        <div class="campo">
-                            <label for="sobrenome"><strong>Sobrenome</strong></label>
-                            <input type="text" name="sobrenome" id="sobrenome" required>
-                        </div>
-
-                    </fieldset> 
-
-                    <div class="campo">
-                        <label for="email"><strong>Email</strong></label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-
-                    <div class="campo">
-                        <br>
-                        <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
-                        <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
-                    </div>
-
-                    <div>
-                        <button class="botao" type="submit" onsubmit="">Concluído</button>            
-                    </div>
-
-                </form>
-        </div>
+            function logar(){
+                
+                var  login = document.getElementById('login').value;
+                var  senha = document.getElementById('senha').value;
+    
+                if(login == "admin" && senha == "admin"){
+                    alert("Sucesso");
+                    location.href = "home.html";
+                    }else{
+                        alert('Usuário e Senha Incorretos');
+                    }
+            }
+    
+    
+    
+        </script>
+    
 
     </body>
 </html>

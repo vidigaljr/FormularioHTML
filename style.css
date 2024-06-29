@@ -1,7 +1,9 @@
 
-* {
-    /* margin: 0,5; */
-    padding: 0;
+form{
+    width: 100%;
+    margin: 200px auto;
+    text-align: center;
+
 }
 
 #titulo 
@@ -31,6 +33,7 @@ body
     font-family: sans-serif;
     font-size: 1em;
     justify-content: center;
+    
 }
 
 
@@ -40,20 +43,16 @@ input, select, textarea, button
     font-size: 1em;
     color: #59429d;
     border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
 }
 
 
 .campo 
 {
     margin-bottom: 1em;
-}
-
-
-.campo label 
-{
-    margin-bottom: 0.2em;
-    color: #000000;
-    display: block;
 }
 
 
@@ -123,7 +122,3 @@ h1
 }
 
 
-.grupo
-{
-   border: none;
-}
